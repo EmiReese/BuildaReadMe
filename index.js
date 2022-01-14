@@ -1,28 +1,27 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const markdown = require('./utils/generateMarkdown.js');
-// const prompts = require('prompts');
-//
-var prompt = require('prompt');
-prompt.start();
+
+
 // data = input from users
 
 const questions = [
-
+{
+    type: 'text',
+    name: 'Title',
+    message: 'Please enter the title to your README.MD'
+},
         {
             type: 'text',
             name: 'Description',
             message:  'Please fill in a detailed description of your application. '
          },
          {
-            type: 'multiselect', 
+            type: 'checkbox', 
             name: 'Table of Contents',
             message: "If your README is long, add a table of contents to make it easy for users to find what they need. You can select multiple options.",
             choices: [
-                {title: 'Installation', value: 'Installation'},
-                {title: 'Usage', value: 'Usage'},
-                {title: 'Credits', value: 'Credits'},
-                {title: 'License', value: 'License'}
+
             ]
          },
         {
@@ -57,8 +56,6 @@ const questions = [
     message: ""
     }];
 
-    
-    prompt.get(questions);
 
 function writetoFile (fileName, data){
     fs.writeFile(fileName, (data), (err) =>
@@ -68,11 +65,13 @@ function writetoFile (fileName, data){
 
 function init () {
     inquirer
-    .prompt
+    .prompt(questions)
     .then((data) => {
 writetoFile("generate_README.md", markdown({...data}));
     })
 }
+
+
 // TODO: Include packages needed for this application
 
 // // TODO: Create an array of questions for user input
@@ -85,5 +84,5 @@ writetoFile("generate_README.md", markdown({...data}));
 // function init() {}
 
 // // Function call to initialize app
-// init();
+init();
 // img sheilds . io for the badge
