@@ -84,5 +84,5 @@ If you have any questions about the repo, open an issue or contact me directly a
 
 `;
 }
-
+//This seemed to work better when I called the function
 module.exports = generateMarkdown;
