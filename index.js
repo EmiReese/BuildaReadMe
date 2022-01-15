@@ -3,58 +3,72 @@ const fs = require('fs');
 const markdown = require('./utils/generateMarkdown.js');
 
 
-// data = input from users
+const generateHTML= ({...theArgs}) => {
+    `<!DOCTYPE html>
+    <html>
+        <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta charset="utf-8">
+            <title>Read Me Generator</title>
+        </head>
+        <body>
+        </body>
+    </html>`
+};
+
 
 const questions = [
 {
-    type: 'text',
+    type: 'input',
     name: 'Title',
-    message: 'Please enter the title to your README.MD'
+    message: 'Please enter the title to your README.MD',
+    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}},
 },
         {
-            type: 'text',
-            name: 'Description',
-            message:  'Please fill in a detailed description of your application. '
-         },
-         {
-            type: 'checkbox', 
-            name: 'Table of Contents',
-            message: "If your README is long, add a table of contents to make it easy for users to find what they need. You can select multiple options.",
-            choices: [
 
-            ]
+            type: 'input', 
+            name: 'Description',
+            message:  'Fill in a detailed description of your application. ',
+            validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}},
          },
         {
-        type: 'text',
+        type: 'input',
         name: 'installation',
-        message:  "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running."
+        message:  "What are the steps required to install your project?",
+        validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
         },
         {
-        type: 'text', 
+        type: 'input', 
         name: 'Usage',
-        message: 'Please, provide instructions and examples for use of the application.'
+        message: 'Provide instructions for the application.',
+        validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
         },
         {
-    type: 'text',
+    type: 'list',
     name: 'License',
-    message:  'Provide a license.'
-    
+    message:  'Which license did you use?',
+    choices: ['The MIT', 'The GPL', 'Apache', 'GNU', 'N/A'],
+    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
     },
     {
-    type: 'text', 
+    type: 'input', 
     name: 'Contributing',
-    message: 'Name the people or organizations that have contributed to this application.'
+    message: 'Any contributors?',
+    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
     },
     {
-    type: 'text',
+    type: 'input',
     name: 'Tests', 
-    message:  "Provide tests for your application."
+    message:  "Provide tests for your application.",
+    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
     },
     {
-    type: 'text', 
+    type: 'input', 
     name: 'Questions',
-    message: ""
-    }];
+    message: "Enter contact information for futher questions.",
+    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}},
+    }
+]
 
 
 function writetoFile (fileName, data){
@@ -71,7 +85,7 @@ writetoFile("generate_README.md", markdown({...data}));
     })
 }
 
-
+init();
 // TODO: Include packages needed for this application
 
 // // TODO: Create an array of questions for user input
@@ -84,5 +98,5 @@ writetoFile("generate_README.md", markdown({...data}));
 // function init() {}
 
 // // Function call to initialize app
-init();
+
 // img sheilds . io for the badge
