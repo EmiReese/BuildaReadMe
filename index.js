@@ -3,19 +3,6 @@ const fs = require('fs');
 const markdown = require('./utils/generateMarkdown.js');
 
 
-const generateHTML= ({...theArgs}) => {
-    `<!DOCTYPE html>
-    <html>
-        <head>
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta charset="utf-8">
-            <title>Read Me Generator</title>
-        </head>
-        <body>
-        </body>
-    </html>`
-};
-
 
 const questions = [
 {
