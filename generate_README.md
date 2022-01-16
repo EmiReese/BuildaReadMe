@@ -1,40 +1,43 @@
-# undefined
-
-https://img.shields.io/github/license/emireese/BuildAReadMe
+# title of readme
+![GitHub license](https://img.shields.io/badge/license-The MIT-blue.svg)
 
 ## Description
 
-undefined
+details
 
-## Table of Contents
+## Table of Contents 
 
-- [Installation](#installation)
+* [Installation](#installation)
 
-- [Usage](#usage)
-  ![GitHub](https://img.shields.io/github/license/emireese/BuildAReadMe)
-- [Contributing](#contributing)
+* [Usage](#usage)
 
-- [Tests](#tests)
+* [License](#license)
 
-- [Questions](#questions)
+* [Contributing](#contributing)
+
+* [Tests](#tests)
+
+* [Questions](#questions)
 
 ## Installation
 
 To install necessary dependencies, run the following command:
 
 ```
-a;lsdkj
+steps
 ```
 
 ## Usage
 
-undefined
+instructions
 
 ## License
 
+This project is licensed under the The MIT license.
+  
 ## Contributing
 
-undefined
+yes
 
 ## Tests
 
@@ -47,3 +50,4 @@ undefined
 ## Questions
 
 If you have any questions about the repo, open an issue or contact me directly at undefined. You can find more of my work at [undefined](https://github.com/undefined/).
+

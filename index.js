@@ -7,53 +7,53 @@ const markdown = require('./utils/generateMarkdown.js');
 const questions = [
 {
     type: 'input',
-    name: 'Title',
+    name: 'title',
     message: 'Please enter the title to your README.MD',
-    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}},
+
 },
         {
 
             type: 'input', 
-            name: 'Description',
-            message:  'Fill in a detailed description of your application. ',
-            validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}},
+            name: 'description',
+            message:  'Fill in a detailed description of your application.',
+           
          },
         {
         type: 'input',
         name: 'installation',
         message:  "What are the steps required to install your project?",
-        validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
+      
         },
         {
         type: 'input', 
-        name: 'Usage',
+        name: 'usage',
         message: 'Provide instructions for the application.',
-        validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
+       
         },
         {
     type: 'list',
-    name: 'License',
+    name: 'license',
     message:  'Which license did you use?',
     choices: ['The MIT', 'The GPL', 'Apache', 'GNU', 'N/A'],
-    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
+   
     },
     {
     type: 'input', 
-    name: 'Contributing',
+    name: 'contributing',
     message: 'Any contributors?',
-    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
+    
     },
     {
     type: 'input',
-    name: 'Tests', 
+    name: 'tests', 
     message:  "Provide tests for your application.",
-    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}}
+   
     },
     {
     type: 'input', 
-    name: 'Questions',
+    name: 'questions',
     message: "Enter contact information for futher questions.",
-    validate: (value)  => {if (value) {return true} else {return "Please enter your answer"}},
+    
     }
 ]
 
@@ -87,3 +87,4 @@ init();
 // // Function call to initialize app
 
 // img sheilds . io for the badge
+
