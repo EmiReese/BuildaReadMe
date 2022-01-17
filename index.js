@@ -45,15 +45,14 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'tests', 
+    name: 'test', 
     message:  "Provide tests for your application.",
    
     },
     {
-    type: 'input', 
-    name: 'questions',
-    message: "Enter contact information for futher questions.",
-    
+        type: 'input',
+        name: 'github',
+        message: 'Please enter your github account name.'
     }
 ]
 

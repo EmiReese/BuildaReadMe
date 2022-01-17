@@ -1,9 +1,9 @@
-# title of readme
+# read me hoe
 ![GitHub license](https://img.shields.io/badge/license-The MIT-blue.svg)
 
 ## Description
 
-details
+nha
 
 ## Table of Contents 
 
@@ -24,12 +24,12 @@ details
 To install necessary dependencies, run the following command:
 
 ```
-steps
+doij\
 ```
 
 ## Usage
 
-instructions
+wkjfenr
 
 ## License
 
@@ -37,17 +37,17 @@ This project is licensed under the The MIT license.
   
 ## Contributing
 
-yes
+no
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-undefined
+these are tests
 ```
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at undefined. You can find more of my work at [undefined](https://github.com/undefined/).
+If you have any questions about the repo, open an issue or contact me directly at undefined. You can find more of my work at [EmiReese](https://github.com/EmiReese/).
 
