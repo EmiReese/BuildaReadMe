@@ -1,9 +1,9 @@
-# read me hoe
+# README.md Generator
 ![GitHub license](https://img.shields.io/badge/license-The MIT-blue.svg)
 
 ## Description
 
-nha
+Details for project
 
 ## Table of Contents 
 
@@ -24,12 +24,12 @@ nha
 To install necessary dependencies, run the following command:
 
 ```
-doij\
+These are the steps
 ```
 
 ## Usage
 
-wkjfenr
+Instructions 
 
 ## License
 
@@ -37,14 +37,14 @@ This project is licensed under the The MIT license.
   
 ## Contributing
 
-no
+No 
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-these are tests
+okay, this is a test. 
 ```
 
 ## Questions
